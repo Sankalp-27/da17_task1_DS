@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Examples with CSS</title>
+    <style>
+        /* General Body Style */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fdfdfd;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* ID for a unique element */
+        #main-title {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        /* Class for all headings */
+        .markdown-heading {
+            color: #16a085;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Class for paragraphs */
+        .markdown-paragraph {
+            margin-bottom: 1em;
+        }
+
+        /* Class for blockquotes */
+        .markdown-blockquote {
+            border-left: 4px solid #ccc;
+            padding-left: 15px;
+            color: #666;
+            font-style: italic;
+            margin: 1.5em 0;
+        }
+
+        /* Classes for lists */
+        .markdown-ul, .markdown-ol {
+            padding-left: 40px;
+            margin-bottom: 1em;
+        }
+
+        /* Class for links */
+        .markdown-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .markdown-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Class for inline code */
+        .markdown-inline-code {
+            background-color: #ecf0f1;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 0.9em;
+        }
+
+        /* Class for code blocks */
+        .markdown-code-block {
+            background-color: #2d2d2d;
+            color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+
+        /* Class for tables */
+        .markdown-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+        }
+        .markdown-table th, .markdown-table td {
+            border: 1px solid #bdc3c7;
+            padding: 10px;
+            text-align: left;
+        }
+        .markdown-table th {
+            background-color: #ecf0f1;
+        }
+
+        /* Class for horizontal rule */
+        .markdown-hr {
+            border: 0;
+            height: 1px;
+            background: #bdc3c7;
+            margin: 2em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">Main Title (Styled with ID)</h1>
+    <p class="markdown-paragraph">This document demonstrates various HTML elements that correspond to Markdown syntax, styled using CSS classes and IDs.</p>
+
+    <h2 class="markdown-heading">Headings (Styled with Class)</h2>
+    <h3 class="markdown-heading">Level 3 Heading</h3>
+    <h4 class="markdown-heading">Level 4 Heading</h4>
+
+    <hr class="markdown-hr">
+
+    <h2 class="markdown-heading">Text Formatting</h2>
+    <p class="markdown-paragraph">
+        This is a standard paragraph. You can have <strong>bold text</strong> and <em>italic text</em>.
+        You can also combine them: <strong><em>bold and italic</em></strong>.
+    </p>
+
+    <hr class="markdown-hr">
+
+    <h2 class="markdown-heading">Blockquote</h2>
+    <blockquote class="markdown-blockquote">
+        This is a blockquote. It's often used for quoting text from another source. It has a distinct style to set it apart.
+    </blockquote>
+
+    <hr class="markdown-hr">
+
+    <h2 class="markdown-heading">Lists</h2>
+    <h3 class="markdown-heading">Unordered List</h3>
+    <ul class="markdown-ul">
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>Nested Item 2.1</li>
+                <li>Nested Item 2.2</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+    </ul>
+
+    <h3 class="markdown-heading">Ordered List</h3>
+    <ol class="markdown-ol">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <hr class="markdown-hr">
+
+    <h2 class="markdown-heading">Code</h2>
+    <p class="markdown-paragraph">
+        You can include inline code like <code class="markdown-inline-code">const example = "hello";</code> within a sentence.
+    </p>
+    <h3 class="markdown-heading">Code Block</h3>
+    <pre class="markdown-code-block"><code>function greet(name) {
+  // This is a code block example
+  console.log(`Hello, ${name}!`);
+}
+
+greet("World");</code></pre>
+
+    <hr class="markdown-hr">
+
+    <h2 class="markdown-heading">Links and Tables</h2>
+    <p class="markdown-paragraph">
+        This is a <a href="#" class="markdown-link">link to another page</a>.
+    </p>
+    <table class="markdown-table">
+        <thead>
+            <tr>
+                <th>Syntax</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Header</td>
+                <td>Title</td>
+            </tr>
+            <tr>
+                <td>Paragraph</td>
+                <td>Text</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
